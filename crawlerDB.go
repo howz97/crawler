@@ -28,13 +28,13 @@ func main(){
 	defer db.Close()
 
 	errUpdate := db.Update(func(tx *bolt.Tx) error {
-		bucket1, err := tx.CreateBucketIfNotExists([]byte("Date1"))
+		bucket, err := tx.CreateBucketIfNotExists([]byte("Date1"))
 		if err != nil {
 			log.Fatal("create bucket error ")
 			return err
 		}
 
-		lastDateSli := bucket1.Get([]byte("lastDate"))
+		lastDateSli := bucket.Get([]byte("lastDate"))
 		if lastDateSli == nil {
 			lastDate = 0
 		}else {
@@ -88,12 +88,12 @@ func main(){
 	}
 
 	errUpdate =db.Update(func(tx *bolt.Tx) error {
-		bucket1 := tx.Bucket([]byte("Date1"))
-		if bucket1 == nil {
+		bucket := tx.Bucket([]byte("Date1"))
+		if bucket == nil {
 			panic("second update can not find Date1 !!!!!!!!")
 		}
 		s := strconv.Itoa(lastDate)
-		err := bucket1.Put([]byte("lastDate"),[]byte(s))
+		err := bucket.Put([]byte("lastDate"),[]byte(s))
 		return err
 	})
 
@@ -122,22 +122,22 @@ func DateToInt(dateNumber string)int{
 	ss := []string{"00","00","00"}
 
 	a := strings.SplitN(dateNumber,"T",2)
-	s1 := strings.SplitN(a[0],"-",3)
-	s2 := strings.SplitN(a[1],":",3)
-	if len(s2) == 2 {
-		ss[0] = s2[0]
-		ss[1] = s2[1]
-		s2 = ss
+	sDay := strings.SplitN(a[0],"-",3)
+	sSecond := strings.SplitN(a[1],":",3)
+	if len(sSecond) == 2 {
+		ss[0] = sSecond[0]
+		ss[1] = sSecond[1]
+		sSecond = ss
 	}
-	if len(s2) == 1 {
-		ss[0] =s2[0]
-		s2 = ss
+	if len(sSecond) == 1 {
+		ss[0] =sSecond[0]
+		sSecond = ss
 	}
-	if len(s2) == 0 {
-		s2 = ss
+	if len(sSecond) == 0 {
+		sSecond = ss
 	}
 
-    s := s1[0]+s1[1]+s1[2]+s2[0]+s2[1]+s2[2]
+    s := sDay[0]+sDay[1]+sDay[2]+sSecond[0]+sSecond[1]+sSecond[2]
     i,err := strconv.Atoi(s)
 	if err != nil {
 		panic("string to int error !")
