@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"log"
 	"time"
+
 	"github.com/gocolly/colly"
 	"github.com/boltdb/bolt"
 )
@@ -103,6 +104,7 @@ func main(){
 
 func checkDate(dateNumber string,lastDate *int)bool{
 	d := DateToInt(dateNumber)
+
 	if count == 1{
 		temporary = d
 	}
@@ -117,9 +119,24 @@ func checkDate(dateNumber string,lastDate *int)bool{
 }
 
 func DateToInt(dateNumber string)int{
-	a := strings.Split(dateNumber,"T")
-	s1 := strings.Split(a[0],"-")
-	s2 := strings.Split(a[1],":")
+	ss := []string{"00","00","00"}
+
+	a := strings.SplitN(dateNumber,"T",2)
+	s1 := strings.SplitN(a[0],"-",3)
+	s2 := strings.SplitN(a[1],":",3)
+	if len(s2) == 2 {
+		ss[0] = s2[0]
+		ss[1] = s2[1]
+		s2 = ss
+	}
+	if len(s2) == 1 {
+		ss[0] =s2[0]
+		s2 = ss
+	}
+	if len(s2) == 0 {
+		s2 = ss
+	}
+
     s := s1[0]+s1[1]+s1[2]+s2[0]+s2[1]+s2[2]
     i,err := strconv.Atoi(s)
 	if err != nil {
