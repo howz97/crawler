@@ -9,12 +9,20 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/gocolly/colly"
+	"gopkg.in/mgo.v2"
 )
 
-// count is used to count how many times checkDate() was called .
+type blog struct {
+	Title   string `bson:"title"`
+	Author  string `bson:"author"`
+	Date    string `bson:"date"`
+	Photo   string `bson:"photo"`
+	Content string `bson:"content"`
+}
+
 var (
-	count     int64 = 1
-	temporary int
+	acount     int64 = 1
+	atemporary int
 )
 
 func main() {
@@ -26,10 +34,17 @@ func main() {
 	}
 	defer db.Close()
 
+	//connect to mongodb server
+	session, err := mgo.Dial("localhost:27017")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer session.Close()
+
 	errUpdate := db.Update(func(tx *bolt.Tx) error {
 		bucket, err := tx.CreateBucketIfNotExists([]byte("Date1"))
 		if err != nil {
-			log.Fatal(err)
+			log.Fatal("create bucket error ")
 			return err
 		}
 
@@ -68,9 +83,12 @@ func main() {
 		dateNumber = strings.TrimRight(dateNumber, "+00:00")
 		content := e.DOM.Find("div.m-post-content").Text()
 
+		c := session.DB("test").C("crawlerStackOF")
 		if checkDate(dateNumber, &lastDate) {
-			fmt.Printf("<<%s>> \n%s     on %s \nphoto :%s \n%s\n----------------------------------------------------\n",
-				title, author, date, photo, content)
+			err := c.Insert(&blog{title, author, date, photo, content})
+			if err != nil {
+				log.Fatal(err)
+			}
 		}
 
 	})
@@ -100,23 +118,23 @@ func main() {
 	}
 }
 
-func CheckDate(dateNumber string, lastDate *int) bool {
-	d := DateToInt(dateNumber)
+func checkDate(dateNumber string, lastDate *int) bool {
+	d := dateToInt(dateNumber)
 
-	if count == 1 {
-		temporary = d
+	if acount == 1 {
+		atemporary = d
 	}
 	if d > *lastDate {
-		count++
+		acount++
 		return true
 	} else {
-		*lastDate = temporary
-		count++
+		*lastDate = atemporary
+		acount++
 		return false
 	}
 }
 
-func DateToInt(dateNumber string) int {
+func dateToInt(dateNumber string) int {
 	ss := []string{"00", "00", "00"}
 
 	a := strings.SplitN(dateNumber, "T", 2)

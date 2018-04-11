@@ -20,9 +20,9 @@ func main() {
 	errUpdate := db.Update(func(tx *bolt.Tx) error {
 		bucket1 := tx.Bucket([]byte("first_bucket"))
 
-		errPut := bucket1.Put([]byte("answer"),[]byte("3"))
-		if errPut != nil{
-			return  errPut
+		errPut := bucket1.Put([]byte("answer"), []byte("3"))
+		if errPut != nil {
+			return errPut
 		}
 
 		get1 := bucket1.Get([]byte("answer"))
@@ -31,7 +31,7 @@ func main() {
 		return nil
 	})
 
-	if errUpdate != nil{
+	if errUpdate != nil {
 		fmt.Println(errUpdate)
 	}
 
@@ -41,6 +41,5 @@ func main() {
 		fmt.Println(string(get1))
 		return nil
 	})
-
 
 }
