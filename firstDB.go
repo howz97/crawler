@@ -18,16 +18,16 @@ func main() {
 	defer db.Close()
 
 	errUpdate := db.Update(func(tx *bolt.Tx) error {
-		bucket1 := tx.Bucket([]byte("first_bucket"))
+		abucket := tx.Bucket([]byte("first_bucket"))
 
-		errPut := bucket1.Put([]byte("answer"), []byte("3"))
+		errPut := abucket.Put([]byte("answer"), []byte("3"))
 		if errPut != nil {
 			return errPut
 		}
 
-		get1 := bucket1.Get([]byte("answer"))
+		aget := abucket.Get([]byte("answer"))
 
-		fmt.Println(string(get1))
+		fmt.Println(string(aget))
 		return nil
 	})
 
@@ -36,9 +36,9 @@ func main() {
 	}
 
 	db.View(func(tx *bolt.Tx) error {
-		bucket1 := tx.Bucket([]byte("first_bucket"))
-		get1 := bucket1.Get([]byte("answer"))
-		fmt.Println(string(get1))
+		abucket := tx.Bucket([]byte("first_bucket"))
+		aget := abucket.Get([]byte("answer"))
+		fmt.Println(string(aget))
 		return nil
 	})
 

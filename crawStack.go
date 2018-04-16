@@ -8,11 +8,11 @@ import (
 
 func main() {
 
-	c := colly.NewCollector()
+	acollector := colly.NewCollector()
 
-	detailCollector := c.Clone()
+	detailCollector := acollector.Clone()
 
-	c.OnHTML("li[id] a", func(e *colly.HTMLElement) {
+	acollector.OnHTML("li[id] a", func(e *colly.HTMLElement) {
 
 		link := e.Attr("href")
 		if !(strings.HasSuffix(link, "company/") || strings.HasSuffix(link, "code-for-a-living/") ||
@@ -21,11 +21,11 @@ func main() {
 			return
 		}
 
-		c.Visit(link)
+		acollector.Visit(link)
 
 	})
 
-	c.OnHTML("article div.m-post-card__content-column", func(e *colly.HTMLElement) {
+	acollector.OnHTML("article div.m-post-card__content-column", func(e *colly.HTMLElement) {
 
 		link, _ := e.DOM.Find("h2.m-post-card__title").Find("a").Attr("href")
 
@@ -39,10 +39,10 @@ func main() {
 		fmt.Printf("\n <<%s>> \n content: %s \n ----------------------------------", title, content)
 	})
 
-	c.OnRequest(func(r *colly.Request) {
+	acollector.OnRequest(func(r *colly.Request) {
 		fmt.Println("visiting ", r.URL.String())
 	})
 
-	c.Visit("https://stackoverflow.blog")
+	acollector.Visit("https://stackoverflow.blog")
 
 }

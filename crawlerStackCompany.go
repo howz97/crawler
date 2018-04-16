@@ -9,10 +9,10 @@ import (
 
 func main() {
 
-	c := colly.NewCollector()
-	detailCollector := c.Clone()
+	acollector := colly.NewCollector()
+	detailCollector := acollector.Clone()
 
-	c.OnHTML("article div.m-post-card__content-column", func(e *colly.HTMLElement) {
+	acollector.OnHTML("article div.m-post-card__content-column", func(e *colly.HTMLElement) {
 
 		link, _ := e.DOM.Find("h2 a").Attr("href")
 		detailCollector.Visit(link)
@@ -31,13 +31,13 @@ func main() {
 			title, author, date, photo, content)
 	})
 
-	c.OnRequest(func(r *colly.Request) {
+	acollector.OnRequest(func(r *colly.Request) {
 		fmt.Println("Visiting", r.URL.String())
 	})
 
 	for i := 1; i < 170; i++ {
 		url := fmt.Sprint("https://stackoverflow.blog/company/page/", i)
 
-		c.Visit(url)
+		acollector.Visit(url)
 	}
 }
