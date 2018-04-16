@@ -119,7 +119,6 @@ func (sc *stackOverFlowCrawler) parse(e *colly.HTMLElement) {
 	if counter == 1 {
 		sc.urlNew, _ = e.DOM.Find("h2 a").Attr("href")
 	}
-	fmt.Println(sc.urlNew)  // todo
 	link, _ := e.DOM.Find("h2 a").Attr("href")
 	if link != sc.urlOld {
 		sc.detailCollector.Visit(link)
