@@ -17,16 +17,9 @@ func (xc *xteamCrawler) Start() {
 	xc.onRequest()
 	xc.onHtml()
 	xc.detailOnHtml()
-
-	// traverse blog
-	pageNumber := 1
-	for {
+	for pageNumber := 1; true; pageNumber++ {
 		url := fmt.Sprintf(site, pageNumber)
 		xc.visit(url)
-		pageNumber++
 	}
-
-	// xc.sufUpdate is the last method called , exit directly in it.
-	// So do not add anything below.
 	xc.putLastUrlAndExit()
 }

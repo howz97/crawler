@@ -9,7 +9,6 @@ const (
 	site = "https://stackoverflow.blog/company/page/"
 )
 
-// start a crawler of stackoverflow.blog
 func (sc *stackOverFlowCrawler) Start() {
 	err := sc.preUpdate()
 	if err != nil {
@@ -24,7 +23,5 @@ func (sc *stackOverFlowCrawler) Start() {
 		sc.visit(url)
 		pageNumber++
 	}
-
 	sc.putLastUrlAndExit()
-
 }

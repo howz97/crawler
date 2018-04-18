@@ -7,6 +7,7 @@ import (
 	"strings"
 	"time"
 
+	"errors"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/boltdb/bolt"
 	"github.com/gocolly/colly"
@@ -14,18 +15,17 @@ import (
 )
 
 const (
-	mgoURL              = "localhost:27017"
-	bucketName          = "blogUrl"
-	boltDB              = "xteam.db"
-	lastUrlKey          = "lastUrl"
 	secUpdateErr        = "second update can not find Date1 !"
+	boltDB              = "xteam.db"
+	bucketName          = "blogUrl"
+	urlOldKey           = "lastUrl"
+	mgoURL              = "localhost:27017"
 	mongoDBName         = "test"
-	mongoCollectionName = "x-teamAnother"
+	mongoCollectionName = "x-team"
 )
 
 var (
-	counter  int64 = 1
-	tagsArry [10]string
+	counter int64 = 1
 )
 
 type blog struct {
@@ -44,6 +44,7 @@ type xteamCrawler struct {
 	mongoDB         *mgo.Session
 	urlOld          string
 	urlNew          string
+	counter         int64
 }
 
 func NewXteam() *xteamCrawler {
@@ -62,6 +63,7 @@ func NewXteam() *xteamCrawler {
 		detailCollector: colly.NewCollector(),
 		boltDB:          boltDB,
 		mongoDB:         mgoDB,
+		counter:         1,
 	}
 }
 
@@ -85,29 +87,30 @@ func (xc *xteamCrawler) preUpdate() error {
 	errUpdate := xc.boltDB.Update(func(tx *bolt.Tx) error {
 		bucket, err := tx.CreateBucketIfNotExists([]byte(bucketName))
 		if err != nil {
-			log.Fatal(err)
 			return err
 		}
 
-		lastUrlSli := bucket.Get([]byte(lastUrlKey))
-		if lastUrlSli == nil {
+		urlOldSli := bucket.Get([]byte(urlOldKey))
+		if urlOldSli == nil {
 			xc.urlOld = "nil"
+			fmt.Println("The first time to crawl.")
 		} else {
-			xc.urlOld = string(lastUrlSli)
+			xc.urlOld = string(urlOldSli)
+			fmt.Printf("You have crawled by %s last time. \n", xc.urlOld)
 		}
 		return nil
 	})
-
 	return errUpdate
 }
 
+// xc.sufUpdate is the last method called , exit directly in it.
 func (xc *xteamCrawler) putLastUrlAndExit() {
 	errUpdate := xc.boltDB.Update(func(tx *bolt.Tx) error {
 		bucket := tx.Bucket([]byte(bucketName))
 		if bucket == nil {
-			panic(secUpdateErr)
+			return errors.New(secUpdateErr)
 		}
-		err := bucket.Put([]byte(lastUrlKey), []byte(xc.urlNew))
+		err := bucket.Put([]byte(urlOldKey), []byte(xc.urlNew))
 		return err
 	})
 	if errUpdate != nil {
@@ -115,6 +118,11 @@ func (xc *xteamCrawler) putLastUrlAndExit() {
 	} else {
 		xc.closeBoltDB()
 		xc.closeMongoDB()
+		if xc.urlNew == xc.urlOld {
+			fmt.Println("No new blog!")
+		}else {
+			fmt.Printf("A crawl done, crawl to %s this time. \n", xc.urlNew)
+		}
 		os.Exit(0)
 	}
 }
@@ -141,6 +149,7 @@ func (xc *xteamCrawler) visit(url string) {
 		if err.Error() == "Not Found" {
 			xc.putLastUrlAndExit()
 		}
+		log.Fatal(err)
 	}
 }
 
@@ -159,20 +168,21 @@ func (xc *xteamCrawler) parse(e *colly.HTMLElement) {
 }
 
 func (xc *xteamCrawler) parseDetail(e *colly.HTMLElement) {
-	title := e.DOM.Find("h1").Text()
-	title = strings.TrimSpace(title)
+	var blog = &blog{}
 
-	photo, _ := e.DOM.Find("img").Attr("src")
-	author := e.DOM.Find("ul li.post-author-name span[itemprop]").Text()
-	date := e.DOM.Find("ul li.post-date span").Text()
-	content := e.DOM.Find("section div").Text()
+	blog.Title = e.DOM.Find("h1").Text()
+	blog.Title = strings.TrimSpace(blog.Title)
+	blog.Photo, _ = e.DOM.Find("img").Attr("src")
+	blog.Author = e.DOM.Find("ul li.post-author-name span[itemprop]").Text()
+	blog.Date = e.DOM.Find("ul li.post-date span").Text()
+	blog.Content = e.DOM.Find("section div").Text()
 	e.DOM.Find("ul.button-action li ul.option-list li a[title]").Each(func(i int, selection *goquery.Selection) {
-		tagsArry[i], _ = selection.Attr("title")
+		tag, _ := selection.Attr("title")
+		blog.Tags = append(blog.Tags, tag)
 	})
-	tags := tagsArry[0:10]
 
 	collection := xc.mongoDB.DB(mongoDBName).C(mongoCollectionName)
-	err := collection.Insert(&blog{title, author, date, photo, content, tags})
+	err := collection.Insert(blog)
 	if err != nil {
 		log.Fatal(err)
 	}

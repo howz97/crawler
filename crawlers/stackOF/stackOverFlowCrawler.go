@@ -13,16 +13,14 @@ import (
 )
 
 const (
-	mgoURL              = "localhost:27017"
-	boltDB              = "stackOF.db"
-	bucketName          = "Date1"
 	secUpdateErr        = "second update can not find Date1 !"
+	boltDB              = "stackOF.db"
+	bucketName          = "blogUrl"
+	lastUrlKey          = "lastUrl"
+	mgoURL              = "localhost:27017"
 	mongoDBName         = "test"
 	mongoCollectionName = "stackOverFlowAnother"
-	lastUrlKey          = "lastUrl"
 )
-
-var counter int64
 
 type blog struct {
 	Title   string `bson:"title"`
@@ -39,6 +37,7 @@ type stackOverFlowCrawler struct {
 	mongoDB         *mgo.Session
 	urlNew          string
 	urlOld          string
+	counter         int64
 }
 
 func NewStackOverFlow() *stackOverFlowCrawler {
@@ -57,6 +56,7 @@ func NewStackOverFlow() *stackOverFlowCrawler {
 		detailCollector: colly.NewCollector(),
 		boltDB:          boltDB,
 		mongoDB:         mgoDB,
+		counter:         1,
 	}
 }
 
@@ -65,7 +65,10 @@ func initBoltDB() (*bolt.DB, error) {
 }
 
 func (sc *stackOverFlowCrawler) closeBoltDB() {
-	sc.boltDB.Close()
+	err := sc.boltDB.Close()
+	if err != nil {
+		panic(err)
+	}
 }
 
 func initMgo() (*mgo.Session, error) {
@@ -80,20 +83,18 @@ func (sc *stackOverFlowCrawler) preUpdate() error {
 	errUpdate := sc.boltDB.Update(func(tx *bolt.Tx) error {
 		bucket, err := tx.CreateBucketIfNotExists([]byte(bucketName))
 		if err != nil {
-			log.Fatal(err)
 			return err
 		}
-
 		lastUrlSli := bucket.Get([]byte(lastUrlKey))
 		if lastUrlSli == nil {
 			sc.urlOld = "nil"
+			fmt.Println("The first time to crawl.")
 		} else {
 			sc.urlOld = string(lastUrlSli)
+			fmt.Printf("You have crawled by %s last time. \n", sc.urlOld)
 		}
-
 		return nil
 	})
-
 	return errUpdate
 }
 
@@ -111,6 +112,11 @@ func (sc *stackOverFlowCrawler) putLastUrlAndExit() {
 	} else {
 		sc.closeBoltDB()
 		sc.closeMongoDB()
+		if sc.urlNew == sc.urlOld {
+			fmt.Println("No new blog!")
+		}else {
+			fmt.Printf("A crawl done, crawl to %s this time. \n", sc.urlNew)
+		}
 		os.Exit(0)
 	}
 }
@@ -125,7 +131,6 @@ func (sc *stackOverFlowCrawler) parse(e *colly.HTMLElement) {
 	} else {
 		sc.putLastUrlAndExit()
 	}
-
 	counter++
 }
 
@@ -138,7 +143,6 @@ func (sc *stackOverFlowCrawler) parseDetail(e *colly.HTMLElement) {
 	dateNumber, _ := e.DOM.Find("div.m-post__meta span.date time").Attr("datetime")
 	dateNumber = strings.TrimRight(dateNumber, "+00:00")
 	content := e.DOM.Find("div.m-post-content").Text()
-
 	collection := sc.mongoDB.DB(mongoDBName).C(mongoCollectionName)
 	err := collection.Insert(&blog{title, author, date, photo, content})
 	if err != nil {
@@ -168,5 +172,6 @@ func (sc *stackOverFlowCrawler) visit(url string) {
 		if err.Error() == "Not Found" {
 			sc.putLastUrlAndExit()
 		}
+		log.Fatal(err)
 	}
 }
