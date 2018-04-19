@@ -1,6 +1,8 @@
-package stackOF
+// Copyright 2018 The zh1014. All rights reserved.
+package stackoverflow
 
 import (
+	"errors"
 	"fmt"
 	"log"
 	"os"
@@ -13,13 +15,11 @@ import (
 )
 
 const (
-	secUpdateErr        = "second update can not find Date1 !"
-	boltDB              = "stackOF.db"
+	boltDBName          = "stackOverFlow.db"
 	bucketName          = "blogUrl"
-	lastUrlKey          = "lastUrl"
 	mgoURL              = "localhost:27017"
-	mongoDBName         = "test"
-	mongoCollectionName = "stackOverFlowAnother"
+	mongoDBName         = "crawlerDB"
+	mongoCollectionName = "stackOverFlow"
 )
 
 type blog struct {
@@ -56,12 +56,16 @@ func NewStackOverFlow() *stackOverFlowCrawler {
 		detailCollector: colly.NewCollector(),
 		boltDB:          boltDB,
 		mongoDB:         mgoDB,
-		counter:         1,
+		counter:         0,
 	}
 }
 
 func initBoltDB() (*bolt.DB, error) {
-	return bolt.Open(boltDB, 0600, &bolt.Options{Timeout: 1 * time.Second})
+	return bolt.Open(boltDBName, 0600, &bolt.Options{Timeout: 1 * time.Second})
+}
+
+func initMgo() (*mgo.Session, error) {
+	return mgo.Dial(mgoURL)
 }
 
 func (sc *stackOverFlowCrawler) closeBoltDB() {
@@ -71,58 +75,82 @@ func (sc *stackOverFlowCrawler) closeBoltDB() {
 	}
 }
 
-func initMgo() (*mgo.Session, error) {
-	return mgo.Dial(mgoURL)
-}
-
 func (sc *stackOverFlowCrawler) closeMongoDB() {
 	sc.mongoDB.Close()
 }
 
 func (sc *stackOverFlowCrawler) preUpdate() error {
-	errUpdate := sc.boltDB.Update(func(tx *bolt.Tx) error {
+	return sc.boltDB.Update(func(tx *bolt.Tx) error {
 		bucket, err := tx.CreateBucketIfNotExists([]byte(bucketName))
 		if err != nil {
 			return err
 		}
-		lastUrlSli := bucket.Get([]byte(lastUrlKey))
-		if lastUrlSli == nil {
-			sc.urlOld = "nil"
+		lastUrlSlice := bucket.Get([]byte("lastUrl"))
+		if lastUrlSlice == nil {
+			sc.urlOld = ""
 			fmt.Println("The first time to crawl.")
 		} else {
-			sc.urlOld = string(lastUrlSli)
+			sc.urlOld = string(lastUrlSlice)
 			fmt.Printf("You have crawled by %s last time. \n", sc.urlOld)
 		}
 		return nil
 	})
-	return errUpdate
 }
 
+// putLastUrlAndExit is the last method called , exit directly in it.
 func (sc *stackOverFlowCrawler) putLastUrlAndExit() {
 	errUpdate := sc.boltDB.Update(func(tx *bolt.Tx) error {
 		bucket := tx.Bucket([]byte(bucketName))
 		if bucket == nil {
-			panic(secUpdateErr)
+			return errors.New("can not find bucket")
 		}
-		err := bucket.Put([]byte(lastUrlKey), []byte(sc.urlNew))
+		err := bucket.Put([]byte("lastUrl"), []byte(sc.urlNew))
 		return err
 	})
 	if errUpdate != nil {
+		sc.closeBoltDB()
+		sc.closeMongoDB()
 		log.Fatal(errUpdate)
 	} else {
 		sc.closeBoltDB()
 		sc.closeMongoDB()
 		if sc.urlNew == sc.urlOld {
 			fmt.Println("No new blog!")
-		}else {
+		} else {
 			fmt.Printf("A crawl done, crawl to %s this time. \n", sc.urlNew)
 		}
 		os.Exit(0)
 	}
 }
 
+func (sc *stackOverFlowCrawler) visit(url string) {
+	err := sc.collector.Visit(url)
+	if err != nil {
+		if err.Error() == "Not Found" {
+			sc.putLastUrlAndExit()
+		}
+		sc.closeBoltDB()
+		sc.closeMongoDB()
+		log.Fatal(err)
+	}
+}
+
+func (sc *stackOverFlowCrawler) onRequest() {
+	sc.collector.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting", r.URL.String())
+	})
+}
+
+func (sc *stackOverFlowCrawler) onHtml() {
+	sc.collector.OnHTML("article div.m-post-card__content-column", sc.parse)
+}
+
+func (sc *stackOverFlowCrawler) detailOnHtml() {
+	sc.detailCollector.OnHTML("main#main.site-main", sc.parseDetail)
+}
+
 func (sc *stackOverFlowCrawler) parse(e *colly.HTMLElement) {
-	if counter == 1 {
+	if sc.counter == 0 {
 		sc.urlNew, _ = e.DOM.Find("h2 a").Attr("href")
 	}
 	link, _ := e.DOM.Find("h2 a").Attr("href")
@@ -131,7 +159,7 @@ func (sc *stackOverFlowCrawler) parse(e *colly.HTMLElement) {
 	} else {
 		sc.putLastUrlAndExit()
 	}
-	counter++
+	sc.counter++
 }
 
 func (sc *stackOverFlowCrawler) parseDetail(e *colly.HTMLElement) {
@@ -146,32 +174,8 @@ func (sc *stackOverFlowCrawler) parseDetail(e *colly.HTMLElement) {
 	collection := sc.mongoDB.DB(mongoDBName).C(mongoCollectionName)
 	err := collection.Insert(&blog{title, author, date, photo, content})
 	if err != nil {
-		log.Fatal(err)
-	}
-}
-
-func (sc *stackOverFlowCrawler) onRequest() {
-	sc.collector.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visiting", r.URL.String())
-	})
-}
-
-func (sc *stackOverFlowCrawler) onHtml() {
-	sc.collector.OnHTML("article div.m-post-card__content-column", sc.parse)
-
-}
-
-func (sc *stackOverFlowCrawler) detailOnHtml() {
-	sc.detailCollector.OnHTML("main#main.site-main", sc.parseDetail)
-
-}
-
-func (sc *stackOverFlowCrawler) visit(url string) {
-	err := sc.collector.Visit(url)
-	if err != nil {
-		if err.Error() == "Not Found" {
-			sc.putLastUrlAndExit()
-		}
+		sc.closeBoltDB()
+		sc.closeMongoDB()
 		log.Fatal(err)
 	}
 }

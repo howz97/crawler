@@ -35,9 +35,11 @@ func main() {
 		fmt.Println("Visiting", r.URL.String())
 	})
 
-	for i := 1; i < 170; i++ {
+	for i := 1; true; i++ {
 		url := fmt.Sprint("https://stackoverflow.blog/company/page/", i)
-
-		acollector.Visit(url)
+		err := acollector.Visit(url)
+		if err != nil {
+			panic(err)
+		}
 	}
 }
