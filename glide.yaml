@@ -1,3 +1,0 @@
-package: crawler
-import:
-- package: github.com/gocolly/colly
