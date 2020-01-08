@@ -13,14 +13,14 @@ import (
 )
 
 const (
-	site = "https://stackoverflow.article/company/page/"
+	site = "https://stackoverflow.blog/company/page/"
 
 	boltDBName      = "stackOverFlow"
 	boltBucket      = "myBucket"
 	progressURL     = "progressURL"
-	mongoDSN        = "localhost:27017"
 	mongoDBName     = "stackOverFlow"
 	mongoCollection = "myCollection"
+	mongoDSN        = "mongodb://localhost:27017/" + mongoDBName
 )
 
 type article struct {
@@ -35,10 +35,10 @@ type Crawler struct {
 	pageCollector    *colly.Collector
 	articleCollector *colly.Collector
 	bolt             *bolt.DB
-	mongo            *mgo.Session
+	mgoS             *mgo.Session
 	start            string
 	destination      string
-	wg				 *sync.WaitGroup
+	wg               *sync.WaitGroup
 }
 
 func New() *Crawler {
@@ -47,7 +47,7 @@ func New() *Crawler {
 		panic(err)
 	}
 
-	mongo, err := mgo.Dial(mongoDSN)
+	mongoSession, err := mgo.Dial(mongoDSN)
 	if err != nil {
 		panic(err)
 	}
@@ -56,98 +56,107 @@ func New() *Crawler {
 		pageCollector:    colly.NewCollector(),
 		articleCollector: colly.NewCollector(),
 		bolt:             blt,
-		mongo:            mongo,
-		wg:				  &sync.WaitGroup{},
+		mgoS:             mongoSession,
+		wg:               &sync.WaitGroup{},
 	}
 	err = crawler.getProgress()
 	if err != nil {
 		panic(err)
 	}
+	crawler.pageCollector.OnRequest(func(r *colly.Request) {
+		log.Println("requesting page: ", r.URL.String())
+	})
 	crawler.articleCollector.OnRequest(func(r *colly.Request) {
-		fmt.Println("requesting article: ", r.URL.String())
+		log.Println("requesting article: ", r.URL.String())
 	})
 	crawler.pageCollector.OnHTML("article div.m-post-card__content-column", crawler.handleArticleLink)
 	crawler.articleCollector.OnHTML("main#main.site-main", crawler.saveArticle)
 	return crawler
 }
 
-func (sc *Crawler) Run() {
-	for pageNumber := 1; true ; pageNumber++ {
+func (cler *Crawler) Run() {
+	for pageNumber := 1; true; pageNumber++ {
 		url := fmt.Sprint(site, pageNumber)
-		err := sc.pageCollector.Visit(url)
+		err := cler.pageCollector.Visit(url)
 		if err != nil {
 			if strings.Contains(err.Error(), "Not Found") {
-				sc.UpdateProgressAndExit()
+				cler.UpdateProgressAndExit()
 			}
 			log.Println(err)
 		}
 	}
 }
 
-func (sc *Crawler)getProgress() error {
-	return sc.bolt.View(func(tx *bolt.Tx) error {
+func (cler *Crawler) getProgress() error {
+	return cler.bolt.Update(func(tx *bolt.Tx) error {
 		bucket, err := tx.CreateBucketIfNotExists([]byte(boltBucket))
 		if err != nil {
 			return err
 		}
 		progress := bucket.Get([]byte(progressURL))
-		sc.destination = ""
+		cler.destination = ""
 		if progress != nil {
-			sc.destination = string(progress)
+			cler.destination = string(progress)
 		}
 		return nil
 	})
 }
 
-func (sc *Crawler) UpdateProgressAndExit() {
-	sc.wg.Wait()
-	sc.mongo.Close()
-	err := sc.bolt.Update(func(tx *bolt.Tx) error {
+func (cler *Crawler) UpdateProgressAndExit() {
+	cler.wg.Wait()
+	cler.mgoS.Close()
+	err := cler.bolt.Update(func(tx *bolt.Tx) error {
 		bucket := tx.Bucket([]byte(boltBucket))
 		if bucket == nil {
 			panic(fmt.Sprintf("bucket %v not exists", boltBucket))
 		}
-		return bucket.Put([]byte(progressURL), []byte(sc.start))
+		return bucket.Put([]byte(progressURL), []byte(cler.start))
 	})
 	if err != nil {
-		log.Println(err)
+		fmt.Println(err)
 	}
-	err = sc.bolt.Close()
+	err = cler.bolt.Close()
 	if err != nil {
-		log.Println(err)
+		fmt.Println(err)
 	}
 	os.Exit(0)
 }
 
-func (sc *Crawler) handleArticleLink(e *colly.HTMLElement) {
+func (cler *Crawler) handleArticleLink(e *colly.HTMLElement) {
 	link, exists := e.DOM.Find("h2 a").Attr("href")
 	if !exists {
-		log.Println("no link in this HTML element")
+		fmt.Println("[ERROR]no link in this HTML element")
 	}
-	if sc.start == "" {
-		sc.start = link
+	if cler.start == "" {
+		cler.start = link
 	}
-	if link != sc.destination {
-		sc.wg.Add(1)
-		go sc.articleCollector.Visit(link)
+	if link != cler.destination {
+		cler.wg.Add(1)
+		go cler.visitArticle(link) // request, parse and store one article in a separate goroutine
 	} else {
-		sc.UpdateProgressAndExit()
+		cler.UpdateProgressAndExit()
 	}
 }
 
-func (sc *Crawler) saveArticle(e *colly.HTMLElement) {
+// visitArticle request, parse and store an article in a separate goroutine
+func (cler *Crawler) visitArticle(url string) {
+	err := cler.articleCollector.Visit(url)
+	if err != nil {
+		fmt.Println("[ERROR]visit article "+url+":", err.Error())
+	}
+	cler.wg.Done()
+}
+
+func (cler *Crawler) saveArticle(e *colly.HTMLElement) {
 	title := e.DOM.Find("div.column h1").Text()
 	title = strings.TrimSpace(title)
 	photo, _ := e.DOM.Find("div span span a img").Attr("src")
 	author := e.DOM.Find("div.m-post__meta span.author-name a").Text()
 	date := e.DOM.Find("div.m-post__meta span.date time").Text()
-	dateNumber, _ := e.DOM.Find("div.m-post__meta span.date time").Attr("datetime")
-	dateNumber = strings.TrimRight(dateNumber, "+00:00")
 	content := e.DOM.Find("div.m-post-content").Text()
-	collection := sc.mongo.DB(mongoDBName).C(mongoCollection)
+	collection := cler.mgoS.DB(mongoDBName).C(mongoCollection)
 	err := collection.Insert(&article{title, author, date, photo, content})
 	if err != nil {
-		log.Println("saveArticle: ", err)
+		fmt.Println("[ERROR]saveArticle: ", err)
 	}
-	sc.wg.Done()
 }
