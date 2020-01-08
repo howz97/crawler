@@ -3,13 +3,14 @@ package stackoverflow
 
 import (
 	"fmt"
-	"github.com/boltdb/bolt"
-	"github.com/gocolly/colly"
-	"gopkg.in/mgo.v2"
 	"log"
 	"os"
 	"strings"
 	"sync"
+
+	"github.com/boltdb/bolt"
+	"github.com/gocolly/colly"
+	"gopkg.in/mgo.v2"
 )
 
 const (

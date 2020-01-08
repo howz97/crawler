@@ -1,4 +1,4 @@
 # crawler
-crawler; go
+crawl all of the articles in  https://stackoverflow.blog/company/ concurrently
 
-crawing the blogs of  https://stackoverflow.blog/company/  and  https://x-team.com/blog/
+store a progress when a complete crawl done
