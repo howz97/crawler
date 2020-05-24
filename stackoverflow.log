@@ -3,153 +3,511 @@
 [36mINFO[0m[0005] requesting page https://stackoverflow.blog/company/page/3/ 
 [36mINFO[0m[0006] requesting page https://stackoverflow.blog/company/page/4/ 
 [36mINFO[0m[0008] requesting page https://stackoverflow.blog/company/page/5/ 
-[36mINFO[0m[0010] requesting page https://stackoverflow.blog/company/page/6/ 
+[36mINFO[0m[0009] requesting page https://stackoverflow.blog/company/page/6/ 
 [36mINFO[0m[0011] requesting page https://stackoverflow.blog/company/page/7/ 
-[36mINFO[0m[0013] requesting page https://stackoverflow.blog/company/page/8/ 
-[36mINFO[0m[0014] requesting page https://stackoverflow.blog/company/page/9/ 
-[36mINFO[0m[0016] requesting page https://stackoverflow.blog/company/page/10/ 
-[36mINFO[0m[0017] requesting article https://stackoverflow.blog/2015/12/23/stack-overflow-gives-back-2015/ 
-[36mINFO[0m[0020] requesting article https://stackoverflow.blog/2015/12/21/bringing-jobs-to-stack-overflow/ 
-[36mINFO[0m[0021] requesting article https://stackoverflow.blog/2015/12/14/announcing-winter-bash-2015/ 
-[36mINFO[0m[0023] requesting article https://stackoverflow.blog/2015/11/11/how-we-talk-about-diversity-at-stack-overflow/ 
-[36mINFO[0m[0025] requesting article https://stackoverflow.blog/2015/10/06/beyond-coding-recap-helping-emerging-developers-launch-careers/ 
-[36mINFO[0m[0026] requesting article https://stackoverflow.blog/2015/09/15/were-changing-our-name-back-to-stack-overflow/ 
-[36mINFO[0m[0028] requesting article https://stackoverflow.blog/2015/09/03/stack-spotlight-aurelien-gasser/ 
-[36mINFO[0m[0029] requesting article https://stackoverflow.blog/2015/08/21/welcome-juan-garza-and-stack-overflow-en-espanol/ 
-[36mINFO[0m[0032] requesting article https://stackoverflow.blog/2015/08/13/stack-spotlight-bethany-marzewski/ 
-[36mINFO[0m[0034] requesting article https://stackoverflow.blog/2015/07/01/the-new-stack-exchange-blog/ 
-[36mINFO[0m[0037] requesting page https://stackoverflow.blog/company/page/11/ 
-[36mINFO[0m[0038] requesting article https://stackoverflow.blog/2015/06/15/pivoting-into-a-new-career-please-welcome-taryn-pratt-bluefooted-community-manager/ 
-[36mINFO[0m[0040] requesting article https://stackoverflow.blog/2015/06/11/welcome-nicolas-chabanovsky-and-stack-overflow-in-russian/ 
-[36mINFO[0m[0042] requesting article https://stackoverflow.blog/2015/06/04/stack-overflow-in-portuguese-now-with-less-beta/ 
-[36mINFO[0m[0043] requesting article https://stackoverflow.blog/2015/05/27/stack-overflow-and-andela-partner-to-provide-education-beyond-borders/ 
-[36mINFO[0m[0045] requesting article https://stackoverflow.blog/2015/05/05/introducing-beyond-coding-free-professional-skills-training-for-emerging-devs-in-nyc/ 
-[36mINFO[0m[0047] requesting article https://stackoverflow.blog/2015/04/22/jnat-and-animuson-workin-on-ur-problemz/ 
-[36mINFO[0m[0049] requesting article https://stackoverflow.blog/2015/04/15/two-new-user-pages-one-new-stat-this-on/ 
-[36mINFO[0m[0051] requesting article https://stackoverflow.blog/2015/04/07/stack-overflow-developer-survey-2015-the-results/ 
-[36mINFO[0m[0054] requesting article https://stackoverflow.blog/2015/03/25/podcast-63-the-plumbers-up-to-67-coins/ 
-[36mINFO[0m[0055] requesting article https://stackoverflow.blog/2015/02/12/education-begins-at-home-improving-developer-training-in-nyc/ 
-[36mINFO[0m[0057] requesting article https://stackoverflow.blog/2015/02/04/podcast-62-delete-this-whole-episode/ 
-[36mINFO[0m[0058] requesting page https://stackoverflow.blog/company/page/12/ 
-[36mINFO[0m[0060] requesting article https://stackoverflow.blog/2015/01/27/targeted-jobs-for-stack-overflow/ 
-[36mINFO[0m[0061] requesting article https://stackoverflow.blog/2015/01/20/andreessen-horowitz-invests-in-stack-exchange/ 
-[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2015/01/16/why-we-still-believe-in-private-offices/ 
-[36mINFO[0m[0065] requesting article https://stackoverflow.blog/2015/01/08/year-in-review-2014/ 
-[36mINFO[0m[0068] requesting article https://stackoverflow.blog/2015/01/06/so-long-winter-bash-2014/ 
-[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2014/12/24/stack-exchange-gives-back-2014/ 
-[36mINFO[0m[0073] requesting article https://stackoverflow.blog/2014/12/16/stack-overflow-in-japanese/ 
-[36mINFO[0m[0075] requesting article https://stackoverflow.blog/2014/12/15/winter-bash-2014/ 
-[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2014/11/11/announcing-bosun-our-new-open-source-monitoring-alerting-system/ 
-[36mINFO[0m[0078] requesting article https://stackoverflow.blog/2014/11/03/stack-exchange-for-the-ipad-is-here-and-ios-apps-now-support-ios-8/ 
-[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2014/10/07/new-editing-badges-and-enhancements-to-suggested-edits/ 
-[36mINFO[0m[0081] requesting page https://stackoverflow.blog/company/page/13/ 
-[36mINFO[0m[0083] requesting article https://stackoverflow.blog/2014/09/16/introducing-runnable-javascript-css-and-html-code-snippets/ 
-[36mINFO[0m[0085] requesting article https://stackoverflow.blog/2014/07/23/please-welcome-jmac-community-manager-of-the-rising-sun/ 
-[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2014/05/08/stack-exchange-for-iphone-is-here/ 
-[36mINFO[0m[0089] requesting article https://stackoverflow.blog/2014/04/22/putting-the-community-back-in-wiki/ 
-[36mINFO[0m[0092] requesting article https://stackoverflow.blog/2014/04/17/announcing-the-launch-of-meta-stack-exchange/ 
-[36mINFO[0m[0093] requesting article https://stackoverflow.blog/2014/04/08/changes-and-guidelines-for-the-protected-question-status/ 
-[36mINFO[0m[0095] requesting article https://stackoverflow.blog/2014/03/17/podcast-56-green-or-red-curae/ 
-[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2014/03/03/your-communities-list-is-now-customizable/ 
-[36mINFO[0m[0099] requesting article https://stackoverflow.blog/2014/02/24/podcast-55-dont-call-it-a-comeback/ 
-[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2014/02/19/2013-stack-overflow-user-survey-results/ 
-[36mINFO[0m[0104] requesting article https://stackoverflow.blog/2014/02/13/cant-we-all-be-reasonable-and-speak-english/ 
-[36mINFO[0m[0106] requesting page https://stackoverflow.blog/company/page/14/ 
-[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2014/02/10/stack-exchange-api-v2-2-and-the-demise-of-v1-x/ 
-[36mINFO[0m[0110] requesting article https://stackoverflow.blog/2014/01/29/ola-mundo-announcing-stack-overflow-in-portuguese/ 
-[36mINFO[0m[0113] requesting article https://stackoverflow.blog/2014/01/27/stack-exchange-for-android-is-here/ 
-[36mINFO[0m[0115] requesting article https://stackoverflow.blog/2014/01/23/stack-exchange-cc-data-now-hosted-by-the-internet-archive/ 
-[36mINFO[0m[0117] requesting article https://stackoverflow.blog/2014/01/03/winter-bash-2013-wrap-up/ 
-[36mINFO[0m[0118] requesting article https://stackoverflow.blog/2013/12/23/stack-exchange-gives-back-2013-2/ 
-[36mINFO[0m[0119] requesting article https://stackoverflow.blog/2013/12/18/who-are-you-take-the-2013-survey/ 
-[36mINFO[0m[0121] requesting article https://stackoverflow.blog/2013/12/16/winter-bash-2013-is-here/ 
-[36mINFO[0m[0123] requesting article https://stackoverflow.blog/2013/12/04/a-new-top-bar-for-stack-exchange/ 
-[36mINFO[0m[0125] requesting article https://stackoverflow.blog/2013/11/08/raised-on-the-net-please-welcome-ana-noemi-community-manager/ 
-[36mINFO[0m[0127] requesting article https://stackoverflow.blog/2013/09/25/summer-hiring-happened-so-fast/ 
-[36mINFO[0m[0129] requesting page https://stackoverflow.blog/company/page/15/ 
-[36mINFO[0m[0130] requesting article https://stackoverflow.blog/2013/09/16/five-years-ago-stack-overflow-launched-then-a-miracle-occurred/ 
-[36mINFO[0m[0133] requesting article https://stackoverflow.blog/2013/09/06/community-management-by-popular-demand-kevin-chang-joins-the-team/ 
-[36mINFO[0m[0135] requesting article https://stackoverflow.blog/2013/08/23/introducing-gabe-the-smiling-community-manager/ 
-[36mINFO[0m[0137] requesting article https://stackoverflow.blog/2013/08/12/finding-a-great-company/ 
-[36mINFO[0m[0139] requesting article https://stackoverflow.blog/2013/08/09/please-welcome-jon-ericson-community-manager/ 
-[36mINFO[0m[0141] requesting article https://stackoverflow.blog/2013/08/05/podcast-51-the-return-of-codinghorror/ 
-[36mINFO[0m[0142] requesting article https://stackoverflow.blog/2013/07/25/podcast-50-listen-to-this-podcast/ 
-[36mINFO[0m[0144] requesting article https://stackoverflow.blog/2013/07/01/say-hi-to-nine-of-our-newest-newbies/ 
-[36mINFO[0m[0145] requesting article https://stackoverflow.blog/2013/06/25/the-war-of-the-closes/ 
-[36mINFO[0m[0147] requesting article https://stackoverflow.blog/2013/05/31/welcome-tim-post-our-latest-community-manager/ 
-[36mINFO[0m[0149] requesting article https://stackoverflow.blog/2013/05/20/showing-off-those-valued-associates/ 
-[36mINFO[0m[0151] requesting page https://stackoverflow.blog/company/page/16/ 
-[36mINFO[0m[0152] requesting article https://stackoverflow.blog/2013/04/25/get-to-know-the-new-stack-employees/ 
-[36mINFO[0m[0154] requesting article https://stackoverflow.blog/2013/04/15/introducing-our-careers-2-0-employer-resource-center/ 
-[36mINFO[0m[0156] requesting article https://stackoverflow.blog/2013/03/08/2013-so-moderator-election/ 
-[36mINFO[0m[0157] requesting article https://stackoverflow.blog/2013/02/25/max-oded-wendy-val-shefali-and-mike-welcome-to-the-family/ 
-[36mINFO[0m[0159] requesting article https://stackoverflow.blog/2013/02/01/why-we-still-believe-in-working-remotely/ 
-[36mINFO[0m[0161] requesting article https://stackoverflow.blog/2013/01/29/about-page-2-0-the-quickstartening/ 
-[36mINFO[0m[0165] requesting article https://stackoverflow.blog/2013/01/25/2012-stack-overflow-user-survey-results/ 
-[36mINFO[0m[0166] requesting article https://stackoverflow.blog/2013/01/15/announcing-a-new-way-to-change-your-profile-picture/ 
-[36mINFO[0m[0168] requesting article https://stackoverflow.blog/2013/01/10/podcast-40-2/ 
-[36mINFO[0m[0170] requesting article https://stackoverflow.blog/2013/01/08/boxing-day/ 
-[36mINFO[0m[0171] requesting article https://stackoverflow.blog/2012/12/24/podcast-39-the-one-with-wil-wheaton/ 
-[36mINFO[0m[0173] requesting page https://stackoverflow.blog/company/page/17/ 
-[36mINFO[0m[0174] requesting article https://stackoverflow.blog/2012/12/21/stack-exchange-gives-back-2012/ 
-[36mINFO[0m[0176] requesting article https://stackoverflow.blog/2012/12/20/apptivate-ms-the-results-are-in/ 
-[36mINFO[0m[0178] requesting article https://stackoverflow.blog/2012/12/19/welcome-to-winter-bash-2012/ 
-[36mINFO[0m[0179] requesting article https://stackoverflow.blog/2012/12/14/hey-there-stranger/ 
-[36mINFO[0m[0181] requesting article https://stackoverflow.blog/2012/12/12/stack-overflow-localizes-careers-2-0-in-german/ 
-[36mINFO[0m[0183] requesting article https://stackoverflow.blog/2012/12/10/windows-devs-on-stack-overflow-when-did-this-happen/ 
-[36mINFO[0m[0185] requesting article https://stackoverflow.blog/2012/12/07/meet-the-new-additions-to-the-stack-exchange-clan/ 
-[36mINFO[0m[0187] requesting article https://stackoverflow.blog/2012/11/26/join-stack-overflow-in-berlin-for-a-blowout-bash-on-december-5/ 
-[36mINFO[0m[0188] requesting article https://stackoverflow.blog/2012/11/12/get-rid-of-ads-you-dont-like-and-encourage-ads-you-do-like/ 
-[36mINFO[0m[0190] requesting article https://stackoverflow.blog/2012/11/02/stack-exchange-partners-with-denver-startup-week/ 
-[36mINFO[0m[0192] requesting article https://stackoverflow.blog/2012/10/26/super-user-win8-challenge/ 
-[36mINFO[0m[0194] requesting page https://stackoverflow.blog/company/page/18/ 
-[36mINFO[0m[0195] requesting article https://stackoverflow.blog/2012/10/17/our-newest-team-members-diandra-robert-adam-nicole-and-casey/ 
-[36mINFO[0m[0198] requesting article https://stackoverflow.blog/2012/10/09/stack-overflow-data-visualization-contest/ 
-[36mINFO[0m[0200] requesting article https://stackoverflow.blog/2012/10/01/join-the-stack-exchange-team-were-hiring/ 
-[36mINFO[0m[0202] requesting article https://stackoverflow.blog/2012/09/26/apptivate-ms-a-windows-8-app-development-contest/ 
-[36mINFO[0m[0203] requesting article https://stackoverflow.blog/2012/09/20/askpatents-com-a-stack-exchange-to-prevent-bad-patents/ 
-[36mINFO[0m[0206] requesting article https://stackoverflow.blog/2012/09/06/join-us-for-our-opening-reception-of-stack-exchange-denver/ 
-[36mINFO[0m[0208] requesting article https://stackoverflow.blog/2012/09/04/stack-exchange-api-v2-1/ 
-[36mINFO[0m[0209] requesting article https://stackoverflow.blog/2012/08/23/stack-exchange-takes-on-denver-welcome-to-our-new-colleagues/ 
-[36mINFO[0m[0211] requesting article https://stackoverflow.blog/2012/08/21/stack-exchange-machine-learning-contest/ 
-[36mINFO[0m[0213] requesting article https://stackoverflow.blog/2012/08/08/stack-exchange-is-not-a-forum-the-role-of-niceness-on-a-qa-site/ 
-[36mINFO[0m[0215] requesting article https://stackoverflow.blog/2012/08/02/stack-exchange-now-60-valued-associates-strong/ 
-[36mINFO[0m[0217] requesting page https://stackoverflow.blog/company/page/19/ 
-[36mINFO[0m[0218] requesting article https://stackoverflow.blog/2012/07/31/the-hunting-of-the-snark/ 
-[36mINFO[0m[0220] requesting article https://stackoverflow.blog/2012/07/23/week-2-of-the-summer-of-love-researching-comments/ 
-[36mINFO[0m[0221] requesting article https://stackoverflow.blog/2012/07/20/kicking-off-the-summer-of-love/ 
-[36mINFO[0m[0224] requesting article https://stackoverflow.blog/2012/06/26/welcome-to-the-arqade/ 
-[36mINFO[0m[0227] requesting article https://stackoverflow.blog/2012/06/08/election-participation-badges/ 
-[36mINFO[0m[0230] requesting article https://stackoverflow.blog/2012/06/04/2012-stack-overflow-community-moderator-election-begins/ 
-[36mINFO[0m[0232] requesting article https://stackoverflow.blog/2012/06/04/can-stack-exchange-capitalize-on-hot-trends/ 
-[36mINFO[0m[0234] requesting article https://stackoverflow.blog/2012/05/22/encyclopedia-stack-exchange/ 
-[36mINFO[0m[0235] requesting article https://stackoverflow.blog/2012/05/21/revamped-notifications/ 
-[36mINFO[0m[0237] requesting article https://stackoverflow.blog/2012/05/03/highlights-from-stack-overflow-worldwide-meetups/ 
-[36mINFO[0m[0240] requesting article https://stackoverflow.blog/2012/04/25/when-a-site-grows-quiet/ 
-[36mINFO[0m[0242] requesting page https://stackoverflow.blog/company/page/20/ 
-[36mINFO[0m[0244] requesting article https://stackoverflow.blog/2012/04/24/tips-for-planners-of-meetups/ 
-[36mINFO[0m[0246] requesting article https://stackoverflow.blog/2012/04/20/more-notes-on-contest-format/ 
-[36mINFO[0m[0248] requesting article https://stackoverflow.blog/2012/04/10/stack-exchange-api-v2-0-contest-winners/ 
-[36mINFO[0m[0251] requesting article https://stackoverflow.blog/2012/03/28/careers-2-0-new-features-for-hiring-developers/ 
-[36mINFO[0m[0254] requesting article https://stackoverflow.blog/2012/03/26/stack-overflow-meetup-everywhere-april-28-2012/ 
-[31mERRO[0m[0264] net/http: request canceled (Client.Timeout exceeded while reading body)
-User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11 
-[36mINFO[0m[0264] retrying for the 1 time                      
-[36mINFO[0m[0264] requesting article https://stackoverflow.blog/2012/03/26/stack-overflow-meetup-everywhere-april-28-2012/ 
-[31mERRO[0m[0274] Get https://stackoverflow.blog/2012/03/26/stack-overflow-meetup-everywhere-april-28-2012/: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
-User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11 
-[36mINFO[0m[0274] retrying for the 2 time                      
-[36mINFO[0m[0274] requesting article https://stackoverflow.blog/2012/03/26/stack-overflow-meetup-everywhere-april-28-2012/ 
-[36mINFO[0m[0276] requesting article https://stackoverflow.blog/2012/03/22/respect-the-community-your-own-and-others/ 
-[36mINFO[0m[0279] requesting article https://stackoverflow.blog/2012/03/06/new-stack-exchange-beta-theme/ 
-[36mINFO[0m[0282] requesting article https://stackoverflow.blog/2012/03/06/reputation-and-historical-archives/ 
-[36mINFO[0m[0284] requesting article https://stackoverflow.blog/2012/03/02/enterprise-vs-consumer-development/ 
-[36mINFO[0m[0286] requesting article https://stackoverflow.blog/2012/02/29/lets-play-the-guessing-game/ 
-[36mINFO[0m[0289] requesting article https://stackoverflow.blog/2012/02/24/stack-exchanges-greatest-hits/ 
-[36mINFO[0m[0291] requesting page https://stackoverflow.blog/company/page/21/ 
-[36mINFO[0m[0293] requesting article https://stackoverflow.blog/2012/02/18/stack-exchange-open-source-projects/ 
-[36mINFO[0m[0295] requesting article https://stackoverflow.blog/2012/02/15/so-you-want-to-be-a-developer-part-1/ 
-[36mINFO[0m[0297] requesting article https://stackoverflow.blog/2012/02/10/survey-results/ 
-[36mINFO[0m[0300] requesting article https://stackoverflow.blog/2012/02/08/stack-exchange-keyboard-shortcuts/ 
-[36mINFO[0m[0302] requesting article https://stackoverflow.blog/2012/02/07/farewell/ 
-[36mINFO[0m[0304] requesting article https://stackoverflow.blog/2012/02/03/stack-exchange-api-v2-0-no-longer-beta/ 
+[36mINFO[0m[0011] requesting page https://stackoverflow.blog/company/page/8/ 
+[36mINFO[0m[0012] requesting page https://stackoverflow.blog/company/page/9/ 
+[36mINFO[0m[0013] requesting page https://stackoverflow.blog/company/page/10/ 
+[36mINFO[0m[0016] requesting page https://stackoverflow.blog/company/page/11/ 
+[36mINFO[0m[0018] requesting page https://stackoverflow.blog/company/page/12/ 
+[36mINFO[0m[0019] requesting page https://stackoverflow.blog/company/page/13/ 
+[36mINFO[0m[0019] requesting page https://stackoverflow.blog/company/page/14/ 
+[36mINFO[0m[0020] requesting page https://stackoverflow.blog/company/page/15/ 
+[36mINFO[0m[0021] requesting page https://stackoverflow.blog/company/page/16/ 
+[36mINFO[0m[0022] requesting page https://stackoverflow.blog/company/page/17/ 
+[36mINFO[0m[0023] requesting page https://stackoverflow.blog/company/page/18/ 
+[36mINFO[0m[0024] requesting page https://stackoverflow.blog/company/page/19/ 
+[36mINFO[0m[0027] requesting page https://stackoverflow.blog/company/page/20/ 
+[36mINFO[0m[0028] requesting page https://stackoverflow.blog/company/page/21/ 
+[36mINFO[0m[0029] requesting page https://stackoverflow.blog/company/page/22/ 
+[36mINFO[0m[0032] requesting page https://stackoverflow.blog/company/page/23/ 
+[36mINFO[0m[0034] requesting page https://stackoverflow.blog/company/page/24/ 
+[36mINFO[0m[0035] requesting page https://stackoverflow.blog/company/page/25/ 
+[36mINFO[0m[0038] requesting page https://stackoverflow.blog/company/page/26/ 
+[36mINFO[0m[0039] requesting page https://stackoverflow.blog/company/page/27/ 
+[36mINFO[0m[0041] requesting page https://stackoverflow.blog/company/page/28/ 
+[36mINFO[0m[0042] requesting page https://stackoverflow.blog/company/page/29/ 
+[36mINFO[0m[0043] requesting page https://stackoverflow.blog/company/page/30/ 
+[36mINFO[0m[0045] requesting page https://stackoverflow.blog/company/page/31/ 
+[36mINFO[0m[0047] requesting page https://stackoverflow.blog/company/page/32/ 
+[36mINFO[0m[0049] requesting page https://stackoverflow.blog/company/page/33/ 
+[36mINFO[0m[0052] requesting page https://stackoverflow.blog/company/page/34/ 
+[36mINFO[0m[0053] requesting page https://stackoverflow.blog/company/page/35/ 
+[36mINFO[0m[0054] requesting page https://stackoverflow.blog/company/page/36/ 
+[36mINFO[0m[0055] requesting page https://stackoverflow.blog/company/page/37/ 
+[36mINFO[0m[0057] requesting page https://stackoverflow.blog/company/page/38/ 
+[36mINFO[0m[0058] requesting page https://stackoverflow.blog/company/page/39/ 
+[36mINFO[0m[0059] requesting page https://stackoverflow.blog/company/page/40/ 
+[36mINFO[0m[0060] requesting page https://stackoverflow.blog/company/page/41/ 
+[36mINFO[0m[0062] requesting page https://stackoverflow.blog/company/page/42/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/03/a-surprisingly-accurate-depiction-of-a-typical-work-day/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/15/stack-exchange-api-contest-winners/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/13/network-central-stackexchange-com/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/07/the-death-of-meta-tags/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/07/22/new-per-site-metas/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/11/defending-attribution-required/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/14/unix-and-ubuntu-why-both/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/01/tag-folksonomy-and-tag-synonyms/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/08/05/chat-now-in-public-beta/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/07/27/moderator-pro-tempore/ 
+[36mINFO[0m[0062] requesting article https://stackoverflow.blog/2010/07/19/jin-on-hanselminutes/ 
+[36mINFO[0m[0063] requesting page https://stackoverflow.blog/company/page/43/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/13/domain-names/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/07/area-51-asking-the-first-questions/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/10/the-7-essential-meta-questions-of-every-beta/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/06/29/server-fault-hiring-from-the-community/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/11/summer-2010-moderator-appointments/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/14/third-place-chat-beta-preview/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/12/improvements-to-badge-system/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/08/stack-exchange-api-1-0-imminent/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/02/our-designer-in-residence-jin-yang/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/07/area-51-first-public-beta/ 
+[36mINFO[0m[0063] requesting article https://stackoverflow.blog/2010/07/09/stack-exchange-on-herding-code/ 
+[36mINFO[0m[0070] requesting page https://stackoverflow.blog/company/page/44/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/23/workin-on-ur-problemz/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/23/careers-now-more-awesomer/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/16/area-51-we-come-in-peace/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/19/improvements-to-bounty-system/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/11/free-vote-based-advertising-launches-second-round/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/25/stack-exchange-data-explorer-open-sourced/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/13/introducing-stack-exchange-data-explorer/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/24/devdays/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/14/new-hires-in-new-york/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/25/welcome-stack-overflow-valued-associate-00008/ 
+[36mINFO[0m[0070] requesting article https://stackoverflow.blog/2010/06/27/area-51-trusting-the-community/ 
+[31mERRO[0m[0073] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0073] retrying for the 1 time                      
+[36mINFO[0m[0073] requesting article https://stackoverflow.blog/2010/07/13/domain-names/ 
+[31mERRO[0m[0073] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0073] retrying for the 1 time                      
+[36mINFO[0m[0073] requesting article https://stackoverflow.blog/2010/07/07/area-51-asking-the-first-questions/ 
+[31mERRO[0m[0073] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0073] retrying for the 1 time                      
+[31mERRO[0m[0073] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0073] retrying for the 1 time                      
+[31mERRO[0m[0073] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0073] requesting article https://stackoverflow.blog/2010/07/12/improvements-to-badge-system/ 
+[36mINFO[0m[0073] retrying for the 1 time                      
+[36mINFO[0m[0073] requesting article https://stackoverflow.blog/2010/07/02/our-designer-in-residence-jin-yang/ 
+[36mINFO[0m[0073] requesting article https://stackoverflow.blog/2010/06/29/server-fault-hiring-from-the-community/ 
+[31mERRO[0m[0073] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0073] retrying for the 1 time                      
+[36mINFO[0m[0073] requesting article https://stackoverflow.blog/2010/07/11/summer-2010-moderator-appointments/ 
+[36mINFO[0m[0077] requesting page https://stackoverflow.blog/company/page/45/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/06/07/new-protected-question-status/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/06/09/welcome-stack-overflow-valued-associates-00006-and-00007/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/05/31/academic-papers-using-stack-overflow-data/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/05/20/stack-exchange-api-public-beta-starts/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/06/10/improved-question-merging/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/05/23/generalist-badge-implemented/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/06/01/migration-of-se-1-0-sites/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/06/08/guidelines-for-use-of-our-logo-and-name/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/05/26/one-year-of-server-fault/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/05/24/stack-exchange-api-contest/ 
+[36mINFO[0m[0077] requesting article https://stackoverflow.blog/2010/05/24/interview-with-lead-developer-david-fullerton/ 
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/23/careers-now-more-awesomer/ 
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/11/free-vote-based-advertising-launches-second-round/ 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/13/introducing-stack-exchange-data-explorer/ 
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/19/improvements-to-bounty-system/ 
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/14/new-hires-in-new-york/ 
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/24/devdays/ 
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/25/welcome-stack-overflow-valued-associate-00008/ 
+[31mERRO[0m[0080] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0080] retrying for the 1 time                      
+[36mINFO[0m[0080] requesting article https://stackoverflow.blog/2010/06/27/area-51-trusting-the-community/ 
+[31mERRO[0m[0083] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0083] retrying for the 2 time                      
+[36mINFO[0m[0083] requesting article https://stackoverflow.blog/2010/07/13/domain-names/ 
+[31mERRO[0m[0083] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0083] retrying for the 2 time                      
+[36mINFO[0m[0083] requesting article https://stackoverflow.blog/2010/07/07/area-51-asking-the-first-questions/ 
+[31mERRO[0m[0083] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[31mERRO[0m[0083] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0083] retrying for the 2 time                      
+[36mINFO[0m[0083] requesting article https://stackoverflow.blog/2010/07/12/improvements-to-badge-system/ 
+[31mERRO[0m[0083] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0083] retrying for the 2 time                      
+[31mERRO[0m[0083] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0083] retrying for the 2 time                      
+[36mINFO[0m[0083] requesting article https://stackoverflow.blog/2010/07/11/summer-2010-moderator-appointments/ 
+[36mINFO[0m[0083] requesting article https://stackoverflow.blog/2010/07/02/our-designer-in-residence-jin-yang/ 
+[36mINFO[0m[0083] retrying for the 2 time                      
+[36mINFO[0m[0083] requesting article https://stackoverflow.blog/2010/06/29/server-fault-hiring-from-the-community/ 
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/06/07/new-protected-question-status/ 
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/06/09/welcome-stack-overflow-valued-associates-00006-and-00007/ 
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/06/10/improved-question-merging/ 
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/05/20/stack-exchange-api-public-beta-starts/ 
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/05/31/academic-papers-using-stack-overflow-data/ 
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/06/01/migration-of-se-1-0-sites/ 
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/05/26/one-year-of-server-fault/ 
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/05/23/generalist-badge-implemented/ 
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/06/08/guidelines-for-use-of-our-logo-and-name/ 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[31mERRO[0m[0087] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/05/24/interview-with-lead-developer-david-fullerton/ 
+[36mINFO[0m[0087] retrying for the 1 time                      
+[36mINFO[0m[0087] requesting article https://stackoverflow.blog/2010/05/24/stack-exchange-api-contest/ 
+[36mINFO[0m[0088] requesting page https://stackoverflow.blog/company/page/46/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/05/06/stack-overflow-funding-chat-qa-transcript/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/05/13/our-brick-in-the-computer-history-museum-wall/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/04/26/podcast-87/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/05/14/new-top-bugs-and-top-requests-on-meta/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/05/04/announcing-our-series-a/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/05/09/joel-on-this-week-in-startups/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/05/11/a-little-steam-giveaway/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/04/24/hanselminutes-the-future-of-stack-overflow/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/04/26/new-linked-posts/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/04/29/do-trilogy-sites-need-a-third-place/ 
+[36mINFO[0m[0088] requesting article https://stackoverflow.blog/2010/05/19/new-automatic-account-association/ 
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/23/careers-now-more-awesomer/ 
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/14/new-hires-in-new-york/ 
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/24/devdays/ 
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/13/introducing-stack-exchange-data-explorer/ 
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/11/free-vote-based-advertising-launches-second-round/ 
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/19/improvements-to-bounty-system/ 
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/25/welcome-stack-overflow-valued-associate-00008/ 
+[31mERRO[0m[0090] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0090] retrying for the 2 time                      
+[36mINFO[0m[0090] requesting article https://stackoverflow.blog/2010/06/27/area-51-trusting-the-community/ 
+[31mERRO[0m[0093] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0093] retrying for the 3 time                      
+[36mINFO[0m[0093] requesting article https://stackoverflow.blog/2010/07/13/domain-names/ 
+[31mERRO[0m[0093] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0093] retrying for the 3 time                      
+[36mINFO[0m[0093] requesting article https://stackoverflow.blog/2010/07/07/area-51-asking-the-first-questions/ 
+[31mERRO[0m[0093] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0093] retrying for the 3 time                      
+[36mINFO[0m[0093] requesting article https://stackoverflow.blog/2010/07/12/improvements-to-badge-system/ 
+[31mERRO[0m[0093] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0093] retrying for the 3 time                      
+[36mINFO[0m[0093] requesting article https://stackoverflow.blog/2010/07/11/summer-2010-moderator-appointments/ 
+[31mERRO[0m[0093] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0093] retrying for the 3 time                      
+[36mINFO[0m[0093] requesting article https://stackoverflow.blog/2010/06/29/server-fault-hiring-from-the-community/ 
+[31mERRO[0m[0093] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[36mINFO[0m[0093] retrying for the 3 time                      
+[36mINFO[0m[0093] requesting article https://stackoverflow.blog/2010/07/02/our-designer-in-residence-jin-yang/ 
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/06/07/new-protected-question-status/ 
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/06/09/welcome-stack-overflow-valued-associates-00006-and-00007/ 
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/05/31/academic-papers-using-stack-overflow-data/ 
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/06/01/migration-of-se-1-0-sites/ 
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/06/10/improved-question-merging/ 
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/05/26/one-year-of-server-fault/ 
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/05/23/generalist-badge-implemented/ 
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/05/20/stack-exchange-api-public-beta-starts/ 
+[31mERRO[0m[0097] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0097] retrying for the 2 time                      
+[36mINFO[0m[0097] requesting article https://stackoverflow.blog/2010/06/08/guidelines-for-use-of-our-logo-and-name/ 
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/05/13/our-brick-in-the-computer-history-museum-wall/ 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/05/06/stack-overflow-funding-chat-qa-transcript/ 
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/04/26/podcast-87/ 
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/05/11/a-little-steam-giveaway/ 
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/05/09/joel-on-this-week-in-startups/ 
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/05/04/announcing-our-series-a/ 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/05/14/new-top-bugs-and-top-requests-on-meta/ 
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/04/24/hanselminutes-the-future-of-stack-overflow/ 
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[31mERRO[0m[0098] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/04/26/new-linked-posts/ 
+[36mINFO[0m[0098] retrying for the 1 time                      
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/05/19/new-automatic-account-association/ 
+[36mINFO[0m[0098] requesting article https://stackoverflow.blog/2010/04/29/do-trilogy-sites-need-a-third-place/ 
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0100] retrying for the 3 time                      
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/23/careers-now-more-awesomer/ 
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0100] retrying for the 3 time                      
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/14/new-hires-in-new-york/ 
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0100] retrying for the 3 time                      
+[36mINFO[0m[0100] retrying for the 3 time                      
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0100] retrying for the 3 time                      
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/19/improvements-to-bounty-system/ 
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0100] retrying for the 3 time                      
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/25/welcome-stack-overflow-valued-associate-00008/ 
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0100] retrying for the 3 time                      
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/11/free-vote-based-advertising-launches-second-round/ 
+[31mERRO[0m[0100] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[36mINFO[0m[0100] retrying for the 3 time                      
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/27/area-51-trusting-the-community/ 
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/24/devdays/ 
+[36mINFO[0m[0100] requesting article https://stackoverflow.blog/2010/06/13/introducing-stack-exchange-data-explorer/ 
+[36mINFO[0m[0101] requesting page https://stackoverflow.blog/company/page/47/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/03/31/party/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/04/19/welcome-stack-overflow-valued-associate-00005/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/04/13/changes-to-stack-exchange/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/03/31/stack-overflow-api-private-beta-starts/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/03/26/moderator-changes-on-super-user/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/04/06/new-10k-feature-inline-tagging/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/03/24/podcast-86/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/04/16/just-another-brick-in-the-computer-history-wall/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/04/13/openid-one-year-later/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/04/23/stack-overflow-and-dvcs/ 
+[36mINFO[0m[0101] requesting article https://stackoverflow.blog/2010/03/31/reminder-its-april-1st/ 
+[31mERRO[0m[0103] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[31mERRO[0m[0103] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[31mERRO[0m[0103] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[31mERRO[0m[0103] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[31mERRO[0m[0103] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[31mERRO[0m[0103] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE) 
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/06/07/new-protected-question-status/ 
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/06/09/welcome-stack-overflow-valued-associates-00006-and-00007/ 
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/05/31/academic-papers-using-stack-overflow-data/ 
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[36mINFO[0m[0107] retrying for the 3 time                      
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/06/01/migration-of-se-1-0-sites/ 
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/05/26/one-year-of-server-fault/ 
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/06/10/improved-question-merging/ 
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/05/23/generalist-badge-implemented/ 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/06/08/guidelines-for-use-of-our-logo-and-name/ 
+[31mERRO[0m[0107] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3 
+[36mINFO[0m[0107] retrying for the 3 time                      
+[36mINFO[0m[0107] requesting article https://stackoverflow.blog/2010/05/20/stack-exchange-api-public-beta-starts/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/05/13/our-brick-in-the-computer-history-museum-wall/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/05/06/stack-overflow-funding-chat-qa-transcript/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/05/09/joel-on-this-week-in-startups/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/05/04/announcing-our-series-a/ 
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/05/11/a-little-steam-giveaway/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/04/24/hanselminutes-the-future-of-stack-overflow/ 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/04/26/podcast-87/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/04/26/new-linked-posts/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/05/14/new-top-bugs-and-top-requests-on-meta/ 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/05/19/new-automatic-account-association/ 
+[31mERRO[0m[0108] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1 
+[36mINFO[0m[0108] retrying for the 2 time                      
+[36mINFO[0m[0108] requesting article https://stackoverflow.blog/2010/04/29/do-trilogy-sites-need-a-third-place/ 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 
+[31mERRO[0m[0110] net/http: request canceled (Client.Timeout exceeded while reading body)
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER 

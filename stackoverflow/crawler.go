@@ -50,6 +50,7 @@ func (crwlr *Crawler) initPageCllt() {
 	crwlr.pageCollector.OnHTML(Conf.Selector.pSel.articleURL, crwlr.onArticleLink)
 	crwlr.pageCollector.OnHTML(Conf.Selector.pSel.nextButton, crwlr.onNextButton)
 	crwlr.pageCollector.OnError(errCallback)
+	crwlr.pageCollector.SetRequestTimeout(30 * time.Second)
 }
 
 func (crwlr *Crawler) initArticleCllt() {
@@ -65,6 +66,7 @@ func (crwlr *Crawler) initArticleCllt() {
 	if err := crwlr.articleCollector.SetStorage(storage); err != nil {
 		panic(err)
 	}
+	crwlr.pageCollector.SetRequestTimeout(30 * time.Second)
 }
 
 func (crwlr *Crawler) loadUserAgents(filename string) {
