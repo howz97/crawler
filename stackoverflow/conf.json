@@ -1,0 +1,27 @@
+{
+  "site": "https://stackoverflow.blog/company/",
+  "database"     : "stackOverFlow",
+  "collection" : "blog",
+  "db_uri"        : "mongodb://localhost:27017/",
+  "dsn"        : "mongodb://localhost:27017/stackOverFlow",
+  "user_agent_file" : "/home/zhanghao/code/zh1014/crawler/stackoverflow/user-agent.txt",
+  "max_retry_times": 3,
+  "selector": {
+    "page": {
+      "article_url": "article > header > h2 > a",
+      "next_button": "#content > div.grid.sm\\:fd-column.ai-center.pt32.pb64.sm\\:pb0 > div.s-pagination > nav > div > a.next.s-pagination--item.fs-body2.py4"
+    },
+    "article": {
+      "whole_article": "#wrapper",
+      "author": "article > div.bb.bc-black-1.pb64.sm\\:pb32.mb64.sm\\:mb32 > div > header > div.mt32.sm\\:mt16 > div > div.grid__cell.fc-black-350 > span > a",
+      "title": "article > div.bb.bc-black-1.pb64.sm\\:pb32.mb64.sm\\:mb32 > div > header > h1",
+      "date": "article > div.bb.bc-black-1.pb64.sm\\:pb32.mb64.sm\\:mb32 > div > header > section > span",
+      "content": "article > div.p-article.wmx9.fc-black-700.mb96",
+      "tag": "article > div.p-article.wmx9.fc-black-700.mb96 > a",
+      "comment": "#comments-list > li > article",
+      "comment_author": "footer > div.comment-author > b",
+      "comment_date": "footer > div.comment-metadata > a > time",
+      "comment_content": "div.comment-content"
+    }
+  }
+}
