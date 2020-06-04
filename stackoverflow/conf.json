@@ -1,7 +1,7 @@
 {
   "site": "https://stackoverflow.blog/company/",
   "database"     : "stackOverFlow",
-  "collection" : "blog",
+  "collection" : "blog2",
   "db_uri"        : "mongodb://localhost:27017/",
   "dsn"        : "mongodb://localhost:27017/stackOverFlow",
   "user_agent_file" : "/home/zhanghao/code/zh1014/crawler/stackoverflow/user-agent.txt",

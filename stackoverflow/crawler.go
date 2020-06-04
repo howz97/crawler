@@ -124,8 +124,8 @@ func (crwlr *Crawler) onArticleLink(e *colly.HTMLElement) {
 		logrus.Error("no link in this HTML element")
 		return
 	}
-	//go crwlr.visitArticle(link)
-	crwlr.visitArticle(link)
+	go crwlr.visitArticle(link)
+	//crwlr.visitArticle(link)
 }
 
 func (crwlr *Crawler) onNextButton(e *colly.HTMLElement) {

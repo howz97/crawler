@@ -8,6 +8,7 @@ require (
 	github.com/antchfx/xmlquery v1.2.2 // indirect
 	github.com/antchfx/xpath v1.1.3 // indirect
 	github.com/boltdb/bolt v1.3.1
+	github.com/fatih/camelcase v1.0.0
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gocolly/colly v1.2.0
 	github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7 // indirect
@@ -17,6 +18,7 @@ require (
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/viper v1.7.0
 	github.com/temoto/robotstxt v1.1.1 // indirect
+	github.com/zh1014/algorithm v0.0.0-20200525062356-d00cb750c2d1
 	github.com/zolamk/colly-mongo-storage v0.0.0-20190324054405-abf7ea547b23
 	go.mongodb.org/mongo-driver v1.3.3 // indirect
 	google.golang.org/appengine v1.6.5 // indirect

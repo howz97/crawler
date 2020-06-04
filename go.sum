@@ -48,6 +48,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/dgryski/go-sip13 v0.0.0-20181026042036-e10d5fee7954/go.mod h1:vAd38F8PWV+bWy6jNmig1y/TA+kYO4g3RSRF0IAv0no=
+github.com/fatih/camelcase v1.0.0 h1:hxNvNX/xYBp0ovncs8WyWZrOrpBNub/JfaMvbURyft8=
+github.com/fatih/camelcase v1.0.0/go.mod h1:yN2Sb0lFhZJUdVvtELVWefmrXpuZESvPmqwoZc+/fpc=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
 github.com/fsnotify/fsnotify v1.4.7 h1:IXs+QLmnXW2CcXuY+8Mzv/fWEsPGWxqefPtCP5CnV9I=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
@@ -249,6 +251,14 @@ github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c/go.mod h1:lB8K/P019DLNhe
 github.com/xdg/stringprep v0.0.0-20180714160509-73f8eece6fdc h1:n+nNi93yXLkJvKwXNP9d55HC7lGK4H/SRcwB5IaUZLo=
 github.com/xdg/stringprep v0.0.0-20180714160509-73f8eece6fdc/go.mod h1:Jhud4/sHMO4oL310DaZAKk9ZaJ08SJfe+sJh0HrGL1Y=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
+github.com/zh1014/algorithm v0.0.0-20191214171710-5c700cbee3e2 h1:EODyGdNujB98rWmmSUHXTy2nF/gN+JrIk/wHUF0H2Fo=
+github.com/zh1014/algorithm v0.0.0-20191214171710-5c700cbee3e2/go.mod h1:aijGa3htyezZN6tLDQWHJDsa9NFPj01eeQMe6Bv47QE=
+github.com/zh1014/algorithm v0.0.0-20200524143129-e186df06d13a h1:6NMjSKIyv7HddiQtcVLg9I3/3HMVJe6KVhJKoh4UjhA=
+github.com/zh1014/algorithm v0.0.0-20200524143129-e186df06d13a/go.mod h1:aijGa3htyezZN6tLDQWHJDsa9NFPj01eeQMe6Bv47QE=
+github.com/zh1014/algorithm v0.0.0-20200525060554-f99e65834a79 h1:NvWyeNRG5clMwE4xE2yea4zwNMt8f99hTM9X/6Zlyy0=
+github.com/zh1014/algorithm v0.0.0-20200525060554-f99e65834a79/go.mod h1:aijGa3htyezZN6tLDQWHJDsa9NFPj01eeQMe6Bv47QE=
+github.com/zh1014/algorithm v0.0.0-20200525062356-d00cb750c2d1 h1:IJO4/F8adJADtyVIVWeYUB3USTvLOHHC5XRlSz8Fq6o=
+github.com/zh1014/algorithm v0.0.0-20200525062356-d00cb750c2d1/go.mod h1:aijGa3htyezZN6tLDQWHJDsa9NFPj01eeQMe6Bv47QE=
 github.com/zolamk/colly-mongo-storage v0.0.0-20190324054405-abf7ea547b23 h1:rQEe1WhoOq4RneBSBiPQ6Ncyboz4zAvIzWTU8YE92WY=
 github.com/zolamk/colly-mongo-storage v0.0.0-20190324054405-abf7ea547b23/go.mod h1:qkoUp/vDlY3DP6cdewtEyjpRQs4uQaWdatjcotbtzk0=
 go.etcd.io/bbolt v1.3.2/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=
